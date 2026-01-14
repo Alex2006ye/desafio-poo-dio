@@ -1,0 +1,32 @@
+package br.com.dio.desafio.Alex2006ye.dominio;
+
+public abstract class Conteudo {
+    //Atributos
+    protected static final double XP_PADRAO = 10d;
+
+    private String titulo;
+    private String descricao;
+
+    //Método abstrato
+    public abstract double calcularxp();
+
+    //Getters e Setters
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    //Implementando método abstrato
+    public abstract double calcularXp();
+}
